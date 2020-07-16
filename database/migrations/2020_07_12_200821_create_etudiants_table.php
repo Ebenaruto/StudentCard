@@ -15,14 +15,20 @@ class CreateEtudiantsTable extends Migration
     {
         Schema::create('etudiants', function (Blueprint $table) {
             $table->increments('matricule');
+            $table->string('tuteur_id');
             $table->string('nom');
             $table->string('prenom');
             $table->string('sexe');
-            $table->string('datedenaissance');
+            $table->date('datedenaissance');
             $table->string('photo');
+            $table->string('nationalite');
             $table->string('telephone');
-            $table->string('annéeaccademique');
+            $table->string('anneeaccademique');
             $table->string('email');
+            $table->string('filiere');
+            $table->string('cycle');
+            $table->string('niveau');
+            
 
 
 

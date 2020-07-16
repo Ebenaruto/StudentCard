@@ -27,24 +27,24 @@ Auth::routes();
 // });
 
 
-Route::get('ListeEtudiant', 'EtudiantsController@index');
-Route::get('Formulaire', 'EtudiantsController@create');
-Route::post('ajouter', 'EtudiantsController@strore');
+// Route::get('ListeEtudiant', 'CardController@index');
+Route::get('Formulaire', 'CardsController@create');
+Route::post('ajouter', 'CardsController@strore');
 
-Route::get('Formulaire', 'CyclesController@create');
-Route::post('ajouter', 'CyclesController@strore');
+// Route::get('Formulaire', 'CyclesController@create');
+// Route::post('ajouter', 'CyclesController@strore');
 
-Route::get('Formulaire', 'FilieresController@create');
-Route::post('ajouter', 'FilieresController@strore');
+// Route::get('Formulaire', 'FilieresController@create');
+// Route::post('ajouter', 'FilieresController@strore');
 
-Route::get('Formulaire', 'NiveauxController@create');
-Route::post('ajouter', 'NiveauxController@strore');
+// Route::get('Formulaire', 'NiveauxController@create');
+// Route::post('ajouter', 'NiveauxController@strore');
 
-Route::get('Formulaire', 'NationalitesController@create');
-Route::post('ajouter', 'NationalitesController@strore');
+// Route::get('Formulaire', 'NationalitesController@create');
+// Route::post('ajouter', 'NationalitesController@strore');
 
-Route::get('Formulaire', 'TuteursController@create');
-Route::post('ajouter', 'TuteursController@strore');
+// Route::get('Formulaire', 'TuteursController@create');
+// Route::post('ajouter', 'TuteursController@strore');
 
 
 

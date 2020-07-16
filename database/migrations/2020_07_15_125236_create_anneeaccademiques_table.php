@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateNiveauxTable extends Migration
+class CreateAnneeaccademiquesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateNiveauxTable extends Migration
      */
     public function up()
     {
-        Schema::create('niveaux', function (Blueprint $table) {
+        Schema::create('anneeaccademiques', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('niveau');
+            $table->string('anneeaccademiques');     
             $table->timestamps();
         });
     }
@@ -27,6 +27,6 @@ class CreateNiveauxTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('niveaux');
+        Schema::dropIfExists('anneeaccademiques');
     }
 }

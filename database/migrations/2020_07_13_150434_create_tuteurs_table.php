@@ -14,8 +14,12 @@ class CreateTuteursTable extends Migration
     public function up()
     {
         Schema::create('tuteurs', function (Blueprint $table) {
-            $table->increments('idtuteur');
-            $table->string('tuteurs');           
+            $table->increments('idtuteurs');
+            $table->string('nomtuteurs');
+            $table->string('prenomtuteurs');  
+            $table->string('telephonetuteurs');           
+         
+           
              $table->timestamps();
         });
     }

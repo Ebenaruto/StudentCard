@@ -39,7 +39,7 @@
 				  <br>
 				  <div class="row">
     				<div class="col">
-      					<input type="text" class="form-control" name="nationalité" placeholder="nationalité">
+      					<input type="text" class="form-control" name="nationalite" placeholder="nationalité">
     				</div>
     				<div class="col">
       					<input type="fichier" class="form-control" name="telephone"placeholder="telephone">
@@ -51,13 +51,13 @@
       					<input type="text" class="form-control" name="email" placeholder="email">
     				</div>
     				<div class="col">
-      					<input type="fichier" class="form-control" name="annéeaccademique"placeholder="annéeaccademique">
+      					<input type="text" class="form-control" name="anneeaccademiques"placeholder="anneeaccademique">
     				</div>
   				</div>
 				  <br>
 				  <div class="row">
     				<div class="col">
-      					<input type="text" class="form-control" name="filiere" placeholder="filiere">
+      					<input type="text" class="form-control" name="filieres" placeholder="filiere">
     				</div>
     				<div class="col">
 					<select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="cycle" required>
@@ -70,28 +70,34 @@
 				  <br>
 				  <div class="row">
     				<div class="col">
-					<select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="niveau" required>
-                        <option >niveau</option>
+					<select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="niveaux" required>
+                        <option >niveaux</option>
                         <option value="L1">L1</option>
                         <option value="L2">L2</option>
-                        <option value="L3">L2</option>
+                        <option value="L3">L3</option>
                       </select>
     				</div>
     				<div class="col">
 					
-      					<input type="text" class="form-control" name="tuteurs" placeholder="tuteur">
+      					<input type="text" class="form-control" name="nomtuteurs" placeholder="nomtuteur">
     				</div>
   				</div>
 				  <br>
+				  <div class="row">
+    				<div class="col">
+      					<input type="text" class="form-control" name="prenomtuteurs" placeholder="prenomtuteurs">
+    				</div>
+    				<div class="col">
+      					<input type="text" class="form-control" name="telephonetuteurs"placeholder="telephonetuteurs">
+    				</div>
+  				</div>
 
 				  
 				 
-  				
-  			
-				  <br><br>
-				 <center>         <button type="submit" class="btn btn-info w-25  mt-3 form-control">Enregistrer</button>
-
-				  <button type="submit" class="btn btn-danger">Retour</button></center>
+  				<br><br>
+				 <center>         
+				 <button type="submit" class="btn btn-info">Enregistrer</button>
+				 <button type="submit" class="btn btn-danger">Retour</button></center>
 			</form>
 
             @endsection
