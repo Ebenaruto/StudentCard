@@ -1,0 +1,25 @@
+body{
+    margin-top: 2px;
+    background-color: whitesmoke;
+}
+.logo{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.log{
+    max-width: 100% !important;
+    height: auto;
+}
+.esi{
+    color: red;
+}
+.appl{
+    border: solid 2px rgb(47, 47, 180);
+    color: white;
+    background-color:  rgb(47, 47, 180);
+}
+.auth{
+    margin-top: 10px;
+    /* background-color: rgb(138, 138, 202); */
+}
