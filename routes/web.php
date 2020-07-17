@@ -17,6 +17,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+ Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+ Route::get('/home', 'HomeController@index')->name('home');
+
+
+ // Etudiants 
+Route::get('etudiants','EtudiantsController@index');
+Route::get('etudiants/enregistrer','EtudiantsController@enregistrer');
+Route::post('etudiants','EtudiantsController@store');
+Route::get('etudiants/{client}','EtudiantsController@show');
+Route::get('etudiants/{client}/edit','EtudiantsController@edit');

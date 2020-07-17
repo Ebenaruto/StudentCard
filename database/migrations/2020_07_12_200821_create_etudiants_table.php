@@ -14,7 +14,20 @@ class CreateEtudiantsTable extends Migration
     public function up()
     {
         Schema::create('etudiants', function (Blueprint $table) {
-            $table->id();
+            $table->increments('matricule');
+            $table->unsignedInteger('cycle_id');
+            $table->unsignedInteger('filiere_id');
+            $table->unsignedInteger('niveau_id');
+            $table->unsignedInteger('tuteur_id');
+            $table->string('nom');
+            $table->string('prenom');
+            $table->string('sexe');
+            $table->date('datedenaissance');
+            $table->string('photo')->nullable;
+            $table->string('nationalité');
+            $table->integer('telephone');
+            $table->string('anneeacademique');
+            $table->string('email');
             $table->timestamps();
         });
     }
