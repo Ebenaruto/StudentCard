@@ -17,10 +17,17 @@ Route::get('/', function () {
     return view('Acceuil');
 });
 
-Auth::routes();
+ Auth::routes();
 
+
+
+ // Etudiants 
+Route::get('etudiants','EtudiantsController@index');
+Route::get('etudiants/enregistrer','EtudiantsController@enregistrer');
+Route::post('etudiants','EtudiantsController@store');
+Route::get('etudiants/{client}','EtudiantsController@show');
+Route::get('etudiants/{client}/edit','EtudiantsController@edit');
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/profiles/{username}', 'ProfileController@show')->name('Profiles.show');
-
 
