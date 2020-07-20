@@ -18,7 +18,7 @@
           </tr>
         </thead>
         <tbody>
-          @foreach ($etudiants as $etudiant)
+          @foreach ($etudiants ?? '' as $etudiant)
           <tr>
           <th scope="row">{{$client->id}}</th>
             <td><a href="/clients/{{$client->id}}">{{$client->name}}</a></td>

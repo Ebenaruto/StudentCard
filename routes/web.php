@@ -14,14 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('Acceuil');
+    return view('auth/login');
 });
 
- Auth::routes();
+Auth::routes();
 
 
 
- // Etudiants 
+ // Etudiants
 Route::get('etudiants','EtudiantsController@index');
 Route::get('etudiants/enregistrer','EtudiantsController@enregistrer');
 Route::post('etudiants','EtudiantsController@store');
