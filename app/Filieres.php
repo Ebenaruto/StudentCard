@@ -6,7 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Filieres extends Model
 {
+    protected $guarded=[];
+
     public function etudiants(){
-        return $this->belongsToMany('App\Etudiants');
+        return $this->hasMany('App\Etudiants');
      }
 }

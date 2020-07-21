@@ -6,5 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Cycles extends Model
 {
-    //
+    protected $guarded=[];
+
+    public function etudiants(){
+        return $this->hasMany('App\Etudiants');
+     }
 }

@@ -11,12 +11,13 @@
             <th>Détail</th>
             </thead>
             <tbody>
-            @foreach($ventes as $vente)
+            @foreach($etudiantsrep as $etudiant)
                 <tr>
-                    <td>{{$vente->Matricule}}</td>
-                    <td>{{$vente->Produit->nom}}</td>
-                    <td>{{$vente->prénom}}</td>
-                    <td>{{$vente->Détail}}</td>
+                    <td>{{$etudiant->matricule}}</td>
+                    <td>{{$etudiant->nom}}</td>
+                    <td>{{$etudiant->prenom}}</td>
+                    <td>{{$etudiant->Détail}}</td>
+                    <td> <a href="{{url('detail/'.$etudiant->matricule)}}">Detail</a></td>
                 </tr>
             @endforeach
             </tbody>

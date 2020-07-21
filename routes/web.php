@@ -27,9 +27,16 @@ Auth::routes();
 // });
 
 
-// Route::get('ListeEtudiant', 'CardController@index');
+Route::get('ListeEtudiant', 'CardsController@index');
 Route::get('Formulaire', 'CardsController@create');
 Route::post('ajouter', 'CardsController@strore');
+Route::get('detail/{matricule}', 'CardsController@detail');
+
+
+// Route::get('Formulaire', 'CyclesController@create');
+// Route::post('ajouter', 'CyclesController@strore');
+
+
 
 // Route::get('Formulaire', 'CyclesController@create');
 // Route::post('ajouter', 'CyclesController@strore');
